@@ -23,21 +23,7 @@ public class Les1Activity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(getBaseContext());
-                builder.setMessage("Look at this dialog!")
-                        .setCancelable(false)
-                        .setPositiveButton("OK - Lets navigate back to main", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                //do things
-                                startActivity(new Intent(Les1Activity.this, MainActivity.class));
-                            }
-                        });
-                AlertDialog alert = builder.create();
-                alert.show();
-
-
-
+                startActivity(new Intent(Les1Activity.this, MainActivity.class));
                 // Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 //        .setAction("Action", null).show();
             }
