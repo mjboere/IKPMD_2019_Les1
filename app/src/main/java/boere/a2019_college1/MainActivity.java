@@ -1,6 +1,7 @@
 package boere.a2019_college1;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,10 +13,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import boere.a2019_college1.models.Car;
+
 public class MainActivity extends AppCompatActivity {
 
     Button college1Button;
     private final static String TAG = "MAIN_ACTIVITY";
+    public static final String PREFS_NAME = "MyPrefsFile";
+
+    protected void onStart() {
+        super.onStart();
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void linkButtonsToEventListeners() {
         college1Button = findViewById(R.id.button);
+        // INLINE METHOD CALLED
         college1Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,6 +86,32 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Les1Activity.class));
             }
         });
-
     }
+
+    public void les2ActivityButtonClicked(View v) {
+
+        // Shared Preferences Example
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        // EDIT MODE ENABLED
+        SharedPreferences.Editor editor = settings.edit();
+        // WRITE A PRIMITIVE (i.e. now a boolean) but could be an int, double, String, char, etc.
+        editor.putBoolean("interestingStuff", true);
+        // SAVE YOUR CHANGES
+        editor.commit();
+
+        // Parameter passing example
+        Intent i = new Intent(MainActivity.this, Les2Activity.class);
+        Bundle b = new Bundle();
+        b.putInt("key", 1); 		// Use a <key/value> pair : <“key”,1>
+        i.putExtras(b); 	        // Store the key/value in the Intent
+        startActivity(i);	        // start navigating to new activity (pass the intent class)
+    }
+
+    public void michielsFunctie (View v) {
+        // DOE IETS
+        startActivity(new Intent(this, Les1Activity.class));
+    }
+
+
+
 }
