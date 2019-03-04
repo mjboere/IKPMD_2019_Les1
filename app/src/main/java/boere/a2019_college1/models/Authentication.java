@@ -16,6 +16,9 @@ public class Authentication implements Serializable {
         return ( (this.username.equals(uid)) && (this.password.equals(pwd) ) );
     }
 
+    public String getUsername(){
+        return this.username;
+    }
     // GETTERS
     // SETTERS
 

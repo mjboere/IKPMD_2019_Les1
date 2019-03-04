@@ -102,9 +102,14 @@ public class MainActivity extends AppCompatActivity {
         // Parameter passing example
         Intent i = new Intent(MainActivity.this, Les2Activity.class);
         Bundle b = new Bundle();
-        b.putInt("key", 1); 		// Use a <key/value> pair : <“key”,1>
+        b.putInt("key", 1); 		// Use a <key/value> pair : <"key",1>
+        b.putChar("letter", 'a');   // Use a <key/value> pair : <"letter",a>
         i.putExtras(b); 	        // Store the key/value in the Intent
         startActivity(i);	        // start navigating to new activity (pass the intent class)
+    }
+
+    public void les3ActivityButtonClicked(View v) {
+        startActivity(new Intent(MainActivity.this, Les3Activity.class));
     }
 
     public void michielsFunctie (View v) {

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Les2Activity"></activity>
+        <activity android:name=".list.CourseListActivity" />
+        <activity
+            android:name=".Les3Activity"
+            android:label="@string/title_activity_les3"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Les2Activity" />
         <activity
             android:name=".Les1Activity"
             android:label="@string/title_activity_les1"
