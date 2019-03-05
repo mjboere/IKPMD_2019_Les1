@@ -21,7 +21,7 @@ import boere.a2019_college1.models.Course;
 
 public class Les2Activity extends AppCompatActivity {
 
-    private String webLocation = "http://fuujokan.nl/subject_lijst.json";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
