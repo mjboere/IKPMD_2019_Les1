@@ -17,6 +17,7 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.List;
 
+import boere.a2019_college1.list.CarListActivity;
 import boere.a2019_college1.list.CourseListActivity;
 import boere.a2019_college1.models.Course;
 import boere.a2019_college1.volley.GsonRequest;
@@ -47,6 +48,10 @@ public class Les3Activity extends AppCompatActivity {
         startActivity(new Intent(this, CourseListActivity.class));
     }
 
+    public void goToAutolijstje(View v) {
+        startActivity(new Intent(this, CarListActivity.class));
+    }
+
     public void getJSONOnlineButtonClicked(View v){
 
         requestSubjects();
@@ -66,7 +71,7 @@ public class Les3Activity extends AppCompatActivity {
             public void onResponse(List<Course> response) {
                 processRequestSucces(response);                 // SUCCES !!
             }
-        }, new Response.ErrorListener(){
+                                        }, new Response.ErrorListener(){
             @Override
             public void onErrorResponse(VolleyError error){
                 processRequestError(error);                     // FAIL :-(
@@ -98,7 +103,7 @@ public class Les3Activity extends AppCompatActivity {
 
     private void processRequestError(VolleyError error){
         // WAT ZULLEN WE HIERMEE DOEN ??
-        //Log.d("  FAIL  !! "," NEENEENEE ");
+        Log.d("  FAIL  !! ",error.getMessage());
         makeToastMessage("Request Failed");
     }
 

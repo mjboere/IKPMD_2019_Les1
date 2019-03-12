@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".list.CourseListActivity" />
+        <activity android:name=".list.CarListActivity" />
         <activity
             android:name=".Les3Activity"
             android:label="@string/title_activity_les3"

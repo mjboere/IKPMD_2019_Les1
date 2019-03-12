@@ -16,9 +16,9 @@ public class DatabaseInfo {
         public static final String KLEUR = "kleur";
     }
 
-/*
+
     public class CourseTables {
-        public static final String COURSE = "course";
+        public static final String COURSETABLE = "course";
     }
 
     public class CourseColumn {
@@ -27,7 +27,7 @@ public class DatabaseInfo {
         public static final String CODE = "code";
         public static final String GRADE = "grade";
     }
-*/
+
 
 
 }

@@ -39,6 +39,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 DatabaseInfo.CarColumn.PRIJS + " TEXT," +
                 DatabaseInfo.CarColumn.KLEUR + " TEXT);"
         );
+        db.execSQL("CREATE TABLE " + DatabaseInfo.CourseTables.COURSETABLE+ " (" +
+                BaseColumns._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                DatabaseInfo.CourseColumn.NAME + " TEXT," +
+                DatabaseInfo.CourseColumn.ECTS + " TEXT," +
+                DatabaseInfo.CourseColumn.GRADE + " TEXT," +
+                DatabaseInfo.CourseColumn.CODE + " TEXT);"
+        );
     }
     // CREATE TABLE CarTable (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, ects TEXT, grade TEXT);
 

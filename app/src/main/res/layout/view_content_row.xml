@@ -1,30 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?android:attr/selectableItemBackground" >
 
     <TextView
-        android:id="@+id/subject_name"
+        android:id="@+id/subject_kleur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:paddingLeft="16dp"
-        android:paddingRight="16dp"
         android:paddingTop="20dp"
+        android:paddingRight="16dp"
         android:text=" DEZE TEXT LEES IK TERUG "
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/subject_code"
+        android:id="@+id/subject_merk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
         android:paddingLeft="16dp"
-        android:paddingRight="16dp"
         android:paddingTop="20dp"
+        android:paddingRight="16dp"
         android:text=" EN DEZE TEXT OOK "
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        />
+        app:layout_constraintEnd_toStartOf="@+id/subject_type"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject_kleur" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/subject_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:paddingRight="16dp"
+        android:text=" EN DEZE TEXT OOK "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject_kleur" />
+
+    <TextView
+        android:id="@+id/subject_aantalDeuren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:paddingRight="16dp"
+        android:text=" EN DEZE TEXT OOK "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject_type" />
+
+    <TextView
+        android:id="@+id/subject_prijs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:paddingRight="16dp"
+        android:text=" EN DEZE TEXT OOK "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toStartOf="@+id/subject_aantalDeuren"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject_merk" />
+
+
+
+</android.support.constraint.ConstraintLayout>
