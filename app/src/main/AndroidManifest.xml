@@ -11,12 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".Les4Activity"
+            android:label="@string/title_activity_les4"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".list.CourseListActivity" />
+        <activity android:name=".graphs.BarChart" />
+        <activity android:name=".graphs.PieChartActivity" />
         <activity android:name=".list.CarListActivity" />
         <activity
             android:name=".Les3Activity"
             android:label="@string/title_activity_les3"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Les2Activity" />
         <activity
             android:name=".Les1Activity"

@@ -112,9 +112,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, Les3Activity.class));
     }
 
+    public void les4ActivityButtonClicked(View v) {
+        startActivity(new Intent(MainActivity.this, Les4Activity.class));
+    }
+
+
     public void michielsFunctie (View v) {
         // DOE IETS
-        startActivity(new Intent(this, Les1Activity.class));
+        // startActivity(new Intent(this, Les1Activity.class));
     }
 
 

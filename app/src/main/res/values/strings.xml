@@ -6,6 +6,7 @@
     <string name="button_les1">Go to Les 1 Activity</string>
     <string name="button_les2">Go to Les 2 Activity</string>
     <string name="title_activity_les3">Les3Activity</string>
+    <string name="title_activity_les4">Les4Activity</string>
 
 
 </resources>
