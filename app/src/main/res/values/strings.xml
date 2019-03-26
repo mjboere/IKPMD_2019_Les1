@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">2019-College1</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_les1">Les1Activity</string>
     <string name="michielsKnop">michielsFunctie</string>
-    <string name="button_les1">Go to Les 1 Activity</string>
-    <string name="button_les2">Go to Les 2 Activity</string>
+    <string name="button_les1"> College 1 </string>
+    <string name="button_les2"> College 2 </string>
+    <string name="button_les3"> College 3 </string>
+    <string name="button_les4"> College 4 </string>
+    <string name="button_les5"> College 5 </string>
+    <string name="title_activity_les1">Les1Activity</string>
+    <string name="title_activity_les2">Les2Activity</string>
     <string name="title_activity_les3">Les3Activity</string>
     <string name="title_activity_les4">Les4Activity</string>
-
-
+    <string name="title_activity_les5">Les5Activity</string>
 </resources>

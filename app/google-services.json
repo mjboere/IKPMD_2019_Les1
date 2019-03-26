@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "1075454437308",
+    "firebase_url": "https://ikpmd-hsleiden.firebaseio.com",
+    "project_id": "ikpmd-hsleiden",
+    "storage_bucket": "ikpmd-hsleiden.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075454437308:android:9838e65b77b53e02",
+        "android_client_info": {
+          "package_name": "boere.a2019_college1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075454437308-56p9gekoeq12veb9r4lfrg2hrj6mon79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyskUm9TbFvGdV06YMgKeNmr6ErrtRxZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075454437308:android:fe972c4d588a3e74",
+        "android_client_info": {
+          "package_name": "boere.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075454437308-edi9l0bto0ff1th3515921b99qo5uk3n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "boere.firebase",
+            "certificate_hash": "496e6c9e688f8dbb4bde5d231b80b6369c304b13"
+          }
+        },
+        {
+          "client_id": "1075454437308-56p9gekoeq12veb9r4lfrg2hrj6mon79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyskUm9TbFvGdV06YMgKeNmr6ErrtRxZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075454437308-56p9gekoeq12veb9r4lfrg2hrj6mon79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075454437308:android:031d959e87d95e4d",
+        "android_client_info": {
+          "package_name": "boere.myapplicationles1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075454437308-bjr733fn7dajuhl4059imchgohnp6ess.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "boere.myapplicationles1",
+            "certificate_hash": "496e6c9e688f8dbb4bde5d231b80b6369c304b13"
+          }
+        },
+        {
+          "client_id": "1075454437308-56p9gekoeq12veb9r4lfrg2hrj6mon79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyskUm9TbFvGdV06YMgKeNmr6ErrtRxZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075454437308-56p9gekoeq12veb9r4lfrg2hrj6mon79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
